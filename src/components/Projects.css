@@ -181,7 +181,16 @@
         grid-template-columns: 1fr;
     }
 
+    .proj-card--full {
+        grid-column: span 1;
+    }
+
     .proj-card__img-wrap {
         height: 260px;
+    }
+
+    .proj-card--full .proj-card__img-wrap {
+        height: 260px;
+        aspect-ratio: auto;
     }
 }
