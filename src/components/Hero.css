@@ -85,7 +85,7 @@
     font-weight: 600;
 }
 
-.hero__ctas {
+.hero__actions {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -182,6 +182,17 @@
 
     .hero__scroll-indicator {
         display: none;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .hero__cta {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero__stats {

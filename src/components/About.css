@@ -97,6 +97,7 @@
     background: var(--gradient-main);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     animation: borderGlow 3s ease-in-out infinite;
 }
@@ -173,5 +174,16 @@
 
     .about__visual {
         order: -1;
+    }
+
+    .about__links {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .about__links a {
+        width: 100%;
+        justify-content: center;
     }
 }
