@@ -34,7 +34,7 @@ export default function Hero() {
                     para crear soluciones significativas.
                 </p>
 
-                <div className="hero__ctas fade-in-up">
+                <div className="hero__actions fade-in-up">
                     <button
                         className="btn-glow"
                         onClick={() => scrollToSection('#projects')}

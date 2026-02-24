@@ -88,7 +88,7 @@
 .hero__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 32px;
     margin-bottom: 60px;
     animation-delay: 0.4s;
 }
