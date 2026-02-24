@@ -1,0 +1,65 @@
+.bg-orbs {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.18;
+    animation: float 8s ease-in-out infinite;
+}
+
+.orb--blue {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #4facfe, #2563eb);
+    top: -200px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.orb--purple {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #a855f7, #7c3aed);
+    top: 30%;
+    right: -150px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+}
+
+.orb--pink {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #f472b6, #ec4899);
+    bottom: 10%;
+    left: 20%;
+    animation-delay: 4s;
+    animation-duration: 12s;
+    opacity: 0.12;
+}
+
+.orb--cyan {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, #00d2ff, #3a7bd5);
+    bottom: -100px;
+    right: 30%;
+    animation-delay: 6s;
+    animation-duration: 9s;
+    opacity: 0.1;
+}
+
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(79, 172, 254, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 172, 254, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+}

@@ -1,0 +1,129 @@
+.projects {
+    position: relative;
+    z-index: 1;
+}
+
+.projects__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.projects__header .section-subtitle {
+    margin: 0 auto 0;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.proj-card {
+    cursor: default;
+}
+
+.proj-card__inner {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image section */
+.proj-card__img-wrap {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj-card__img-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, var(--proj-color, var(--blue)) 0%, transparent 70%);
+    opacity: 0.08;
+}
+
+.proj-card__img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: top center;
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.proj-card:hover .proj-card__img {
+    transform: scale(1.04);
+}
+
+.proj-card__type-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    background: rgba(5, 5, 16, 0.85);
+    border: 1px solid;
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+/* Content */
+.proj-card__content {
+    padding: 28px;
+    flex: 1;
+}
+
+.proj-card__title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.proj-card__subtitle {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.proj-card__desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.proj-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.proj-card__tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border: 1px solid;
+    border-radius: 100px;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proj-card__img-wrap {
+        height: 260px;
+    }
+}

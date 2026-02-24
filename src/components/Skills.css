@@ -1,0 +1,132 @@
+.skills {
+    position: relative;
+    z-index: 1;
+}
+
+.skills__header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.skills__header .section-subtitle {
+    margin: 0 auto 0;
+}
+
+/* Tech badges row */
+.skills__badges-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.skill-badge {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--blue);
+    padding: 7px 16px;
+    background: rgba(79, 172, 254, 0.08);
+    border: 1px solid rgba(79, 172, 254, 0.2);
+    border-radius: 100px;
+    cursor: default;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-badge::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-main);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-badge:hover {
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.skill-badge:hover::before {
+    opacity: 1;
+}
+
+.skill-badge:hover span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Skill groups grid */
+.skills__groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.skills__group {
+    padding: 28px;
+}
+
+.skills__group-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.skills__group-icon {
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(79, 172, 254, 0.1);
+    border-radius: 10px;
+}
+
+.skills__group-name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-item {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.skill-item:hover {
+    color: white;
+    border-color: rgba(79, 172, 254, 0.3);
+    background: rgba(79, 172, 254, 0.08);
+}
+
+@media (max-width: 900px) {
+    .skills__groups {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills__groups {
+        grid-template-columns: 1fr;
+    }
+}
