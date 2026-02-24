@@ -20,8 +20,8 @@ const contacts = [
             </svg>
         ),
         label: 'Teléfono',
-        value: '+58-414-1001564',
-        href: 'tel:+584141001564',
+        value: '+58-414-4001564',
+        href: 'tel:+584144001564',
         color: 'var(--purple)',
     },
     {
